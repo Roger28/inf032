@@ -52,9 +52,28 @@ print('A distancia percorrida foi:', distancia_percorrida)
 print('A quantidade de litros gasto foi:', quantidade_litros_gasto)
 
 print('\nQuestão 06\n')
+valor_do_emprestimo = float(input('Digite o valor do empréstimo\n'))
+taxa_de_juros = float(input('Digite a porcentagem da taxad de juros\n'))
+quantidade_parcelas = int(input('Digite a quantidade de parcelas\n'))
+juros = valor_do_emprestimo * taxa_de_juros
+valor_total = valor_do_emprestimo + juros
+valor_das_parcelas = valor_total / quantidade_parcelas
+print('Valor total:', valor_total)
+print('Valor de cada parcela:', valor_das_parcelas)
 
 print('\nQuestão 07\n')
+quantidade_fitas = int(input('Digite a quantidade de fitas\n'))
+aluguel = float(input('Digite o valor do aluguel\n'))
+quantidade_fitas_mensal = quantidade_fitas / 3
+faturamento = aluguel * quantidade_fitas_mensal * 12
+print('O faturamento anual foi:', faturamento)
+quantidade_fitas_com_atraso = quantidade_fitas_mensal / 10
+faturamento_com_multas = quantidade_fitas_com_atraso * aluguel * 0.10
+print('O faturamento mensal com multas foi:', faturamento_com_multas)
+quantidade_fitas_restantes = quantidade_fitas - ((quantidade_fitas * 0.02) + (quantidade_fitas / 10))
+print('Quantidade de fitas restantes é:', quantidade_fitas_restantes)
 
+print('\nQuestão 08\n')
 numero: int = int(input('Digite um número de 3 dígitos\n'))
 numero_invertido: int = int(str(numero)[::-1])
 soma = numero + numero_invertido

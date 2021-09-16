@@ -41,10 +41,20 @@ salario_liquido: float = (valor_hora_aula * 8 * aulas_dadas) * ((100 - percentua
 print('O salário líquido é:', salario_liquido)
 
 print('\nQuestão 05\n')
+km_por_litro = 12
 tempo_gasto: int = int(input('Digite o tempo gasto\n'))
 velocidade_media: int = int(input('Digite a velocidade média\n'))
+distancia_percorrida = tempo_gasto * velocidade_media
+quantidade_litros_gasto = distancia_percorrida / km_por_litro
+print('O tempo gasto foi:', tempo_gasto)
+print('A velocidade média é:', velocidade_media)
+print('A distancia percorrida foi:', distancia_percorrida)
+print('A quantidade de litros gasto foi:', quantidade_litros_gasto)
 
-print('\nQuestão 08\n')
+print('\nQuestão 06\n')
+
+print('\nQuestão 07\n')
+
 numero: int = int(input('Digite um número de 3 dígitos\n'))
 numero_invertido: int = int(str(numero)[::-1])
 soma = numero + numero_invertido

@@ -35,10 +35,9 @@ d = {
 print(d['nome'])
 
 print('Questão 05')
-agenda = {
-    'cpf': '123.456.789-00',
-    'nome': 'Roger Mauricio M. Souza',
-    'idade': 31,
-    'telefone': '71 991916695'
-}
+agenda = {}
+agenda['cpf'] = input('Digite seu cpf:\n')
+agenda['nome'] = input('Digite seu nome:\n')
+agenda['idade'] = int(input('Digite sua idade:\n'))
+agenda['telefone'] = input('Digite seu telefone:\n')
 print(agenda)

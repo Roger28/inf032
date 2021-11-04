@@ -1,3 +1,6 @@
+# Roger Maurício M. Souza
+# 04/11/2021
+
 print('Questao 1')
 numero = 1
 while numero > 0:

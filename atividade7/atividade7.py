@@ -15,20 +15,20 @@ import math
 #     contador += 1
 #     print(f'{contador} números foram digitados ')
 
-# print('Questão 03')
-# sair = ''
-# total = 0
-# contador = 0
-# while sair != 'sair':
-#     numero = int(input('Digite um numero positivo\n'))
-#     if numero % 2 != 0:
-#         continue
-#     else:
-#         total += numero
-#         contador += 1
-#
-#     print(f'A média dos números digitados é {math.trunc(total / contador)}')
-#     sair = input('Digite sair para encerrar ou qualquer tecla para continuar...\n')
+print('Questão 03')
+sair = ''
+total = 0
+contador = 0
+while sair != 'sair':
+    numero = int(input('Digite um numero positivo\n'))
+    if numero < 0:
+        continue
+    else:
+        total += numero
+        contador += 1
+
+    print(f'A média dos números digitados é {math.trunc(total / contador)}')
+    sair = input('Digite sair para encerrar ou qualquer tecla para continuar...\n')
 
 
 # print('Questão 04')

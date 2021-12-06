@@ -9,9 +9,8 @@ def enviar_mensagem_para_whatsapp():
     numero_telefone = input('Digite o número de telefone que receberá a mensagem : ')
     mensagem_a_ser_enviada = input('Digite a mensagem : ')
     hora = int(horario_local_atual.strftime("%H"))
-    minutos = int(horario_local_atual.strftime("%M")) + 1
 
-    pywhatkit.sendwhatmsg(numero_telefone, mensagem_a_ser_enviada, hora, minutos)
+    pywhatkit.sendwhatmsg_instantly(numero_telefone, mensagem_a_ser_enviada, hora, True, 5)
 
 
 sair = ''
